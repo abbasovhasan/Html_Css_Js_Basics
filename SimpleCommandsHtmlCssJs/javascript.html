@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Bölməsi</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <h1>JavaScript Bölməsi</h1>
+
+    <button class="toggle-btn">JS nədir?</button>
+    <div class="content">
+        <p>JavaScript veb səhifələrə dinamika və interaktivlik əlavə edən proqramlaşdırma dilidir.</p>
+    </div>
+
+    <button class="toggle-btn">Dəyişənlərin tipləri (number, string)</button>
+    <div class="content">
+        <p>JavaScript-də əsas dəyişən tipləri: number (rəqəm), string (mətn).</p>
+        <pre><code>let yas = 25; let ad = "Nigar";</code></pre>
+    </div>
+
+    <button class="toggle-btn">var, let, const</button>
+    <div class="content">
+        <p><b>var:</b> köhnə üsul, hər yerdə işləyir. <br>
+        <b>let:</b> blok içində dəyişən üçün. <br>
+        <b>const:</b> dəyişməyən sabitlər üçün.</p>
+        <pre><code>var a = 1; let b = 2; const c = 3;</code></pre>
+    </div>
+
+    <button class="toggle-btn">if else</button>
+    <div class="content">
+        <p>Şərtlərə əsasən kodların fərqli istiqamətdə işləməsini təmin edir.</p>
+        <pre><code>if (yas > 18) { console.log("Böyüksən"); } else { console.log("Uşaqsan"); }</code></pre>
+    </div>
+
+    <button class="toggle-btn">for, while, break</button>
+    <div class="content">
+        <p><b>for:</b> təkrarlar üçün.<br>
+           <b>while:</b> şərt doğru olduqca işləyir.<br>
+           <b>break:</b> dövrəni yarıda kəsir.</p>
+        <pre><code>for (let i = 0; i &lt; 5; i++) { console.log(i); }</code></pre>
+    </div>
+
+    <button class="toggle-btn">Array-lər, length, push və s.</button>
+    <div class="content">
+        <p>Array birdən çox dəyəri saxlamaq üçün istifadə olunur.</p>
+        <pre><code>let meyveler = ["alma", "armud"];
+meyveler.push("banan");
+console.log(meyveler.length);</code></pre>
+    </div>
+
+    <button class="toggle-btn">Obyekt nədir və necə yazılır?</button>
+    <div class="content">
+        <p>Obyekt bir neçə dəyərin açar-dəyər (key-value) cütü şəklində saxlanmasıdır.</p>
+        <pre><code>let insan = { ad: "Nigar", yas: 25 };</code></pre>
+    </div>
+
+    <button class="toggle-btn">Funksiya və nümunə</button>
+    <div class="content">
+        <p>Funksiya təkrar istifadə edilən kod blokudur.</p>
+        <pre><code>function topla(a, b) { return a + b; }</code></pre>
+    </div>
+
+    <button class="toggle-btn">Element yaratmaq və içinə yazı yazmaq</button>
+    <div class="content">
+        <p>Yeni HTML elementi yaratmaq və səhifəyə əlavə etmək üçün istifadə olunur.</p>
+        <pre><code>let yeniP = document.createElement("p");
+yeniP.innerText = "Salam Dünya!";
+document.body.appendChild(yeniP);</code></pre>
+    </div>
+
+    <a href="index.html">← Geri</a>
+
+    <footer>
+        <p>Check my profile</p>
+        <ul>
+            <li><a href="https://github.com/abbasovhasan" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/hasan-abbasov-24508b263/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+    <button id="back-to-top" class="back-to-top-btn">↑</button>
+    <button id="toggle-theme" class="theme-btn">🌙</button>
+    
+</body>
+</html>
